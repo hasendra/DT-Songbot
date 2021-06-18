@@ -11,8 +11,8 @@ from DTSongBot import LOGGER
 pm_start_text = """
 Heya [{}](tg://user?id={}), I'm 🎧 Song Download bot  🎵
 Do /help for know my commands
-A bot by @Damantha_Jasinghe
-Updates channel @ankivectorUpdates
+A bot by @Akash Hasendra
+Updates channel @Publictechno
 """
 
 help_text = """
@@ -20,8 +20,9 @@ My commands👇
 - /song <song name>: download songs via Youtube
 - /saavn <song name>: download songs via JioSaavn
 - /deezer <song name>: download songs via Deezer
+- ~/Spotify <Link>: download songs via spotify~ (Still Testing ❌) 
 - Send youtube url to my pm for download it on audio format
-A bot by @ankivectorUpdates
+A bot by @Legend000001
 """
 
 @app.on_message(filters.command("start"))
@@ -34,10 +35,10 @@ async def start(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="Updates channel", url="https://t.me/ankivectorUpdates"
+                        text="Updates channel", url="https://t.me/publictechno"
                     ),
                     InlineKeyboardButton(
-                        text="Support Group", url="https://t.me/AnkiSupport_Official"
+                        text="Support Group", url="https://t.me/publictechno"
                     )
                 ]
             ]
@@ -51,5 +52,5 @@ async def start(client, message):
     await message.reply(help_text)
 
 app.start()
-LOGGER.info("DTSongBot is online.")
+LOGGER.info("SongBot is online.")
 idle()
