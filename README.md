@@ -1,4 +1,4 @@
-# DT-Songbot
+# PT-Songbot
 ## A telegram bot that can download songs
 <p align="center">
   <img src="https://telegra.ph/file/0e9b3fdd3531e65ab53fb.jpg">
