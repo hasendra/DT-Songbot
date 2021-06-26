@@ -52,5 +52,5 @@ async def start(client, message):
     await message.reply(help_text)
 
 app.start()
-LOGGER.info("DTSongBot is online.")
+LOGGER.info("Publictechnomusic is online.")
 idle()
